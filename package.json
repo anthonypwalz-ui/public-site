@@ -1,0 +1,12 @@
+{
+  "name": "bold-north-electric-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cleancss -o assets/styles.min.css assets/styles.css && terser assets/app.js -c -m -o assets/app.min.js"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.39.0"
+  }
+}

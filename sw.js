@@ -15,8 +15,8 @@ var STATIC_CACHE  = 'static-'  + CACHE_VERSION;
 var PAGE_CACHE    = 'pages-'   + CACHE_VERSION;
 
 var PRECACHE_ASSETS = [
-  '/assets/styles.css',
-  '/assets/app.js',
+  '/assets/styles.min.css',
+  '/assets/app.min.js',
   '/assets/logo.png',
   '/assets/icon.png',
   '/assets/favicon.svg'
