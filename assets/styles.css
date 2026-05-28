@@ -20,6 +20,24 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
+/* Under-construction banner */
+.construction-banner {
+  background: #FEF3C7;
+  border-bottom: 1px solid #F59E0B;
+  color: #92400E;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 20px;
+  letter-spacing: 0.01em;
+}
+.construction-banner svg {
+  display: inline-block;
+  vertical-align: -3px;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
