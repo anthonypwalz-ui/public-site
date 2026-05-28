@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Privacy Policy — Bold North Electric</title>
+<meta http-equiv="Cache-Control" content="public, max-age=3600" />
+<title>Privacy Policy ï¿½ Bold North Electric</title>
 <meta name="description" content="How Bold North Electric collects, uses, and protects information submitted through our website." />
 <link rel="stylesheet" href="../assets/styles.css" />
 <link rel="icon" href="../assets/icon.png" type="image/png" />
@@ -39,7 +40,7 @@
       <p>When you submit a form on this site we collect your name, contact info, location, and any project details you provide. Our server logs may also record IP address and browser info for security purposes.</p>
 
       <h2>How we use it</h2>
-      <p>To reply to your request, schedule service, send invoices or estimates, and — if you opt in — to follow up on future maintenance needs. We do not sell or rent your information to third parties.</p>
+      <p>To reply to your request, schedule service, send invoices or estimates, and ï¿½ if you opt in ï¿½ to follow up on future maintenance needs. We do not sell or rent your information to third parties.</p>
 
       <h2>Who we share it with</h2>
       <p>We share data only with service providers that help us operate (email delivery, payment processing, scheduling software) and only as needed to perform those services.</p>
@@ -55,7 +56,7 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <div><strong>Bold North Electric</strong><p>Licensed &amp; insured · MN License #EA-000000</p></div>
+    <div><strong>Bold North Electric</strong><p>Licensed &amp; insured ï¿½ MN License #EA-000000</p></div>
     <nav aria-label="Footer">
       <a href="../services/">Services</a>
       <a href="../service-areas/">Service Areas</a>
@@ -65,8 +66,15 @@
     </nav>
     <div class="footer-contact"><a href="tel:+16124407950">(612) 440-7950</a><br /><a href="mailto:hello@example.com">hello@example.com</a></div>
   </div>
-  <p class="copy">© <span id="year"></span> Bold North Electric. All rights reserved.</p>
+  <p class="copy">ï¿½ <span id="year"></span> Bold North Electric. All rights reserved.</p>
 </footer>
 <script src="../assets/app.js" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
 </body>
 </html>

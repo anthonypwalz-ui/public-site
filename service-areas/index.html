@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Service Areas — Bold North Electric</title>
+<meta http-equiv="Cache-Control" content="public, max-age=3600" />
+<title>Service Areas ï¿½ Bold North Electric</title>
 <meta name="description" content="We serve Minneapolis, St. Paul, and every suburb in the Twin Cities seven-county metro. Hennepin, Ramsey, Dakota, Anoka, Washington, Scott, Carver." />
 <link rel="stylesheet" href="../assets/styles.css" />
 <link rel="icon" href="../assets/icon.png" type="image/png" />
@@ -89,7 +90,7 @@
     <div class="wrap cta-inner">
       <div>
         <h2>Not sure if you're in range?</h2>
-        <p>Give us your zip — if we can't help, we'll point you to someone who can.</p>
+        <p>Give us your zip ï¿½ if we can't help, we'll point you to someone who can.</p>
       </div>
       <a class="btn btn-primary" href="../contact/">Check coverage</a>
     </div>
@@ -98,7 +99,7 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <div><strong>Bold North Electric</strong><p>Licensed &amp; insured · MN License #EA-000000</p></div>
+    <div><strong>Bold North Electric</strong><p>Licensed &amp; insured ï¿½ MN License #EA-000000</p></div>
     <nav aria-label="Footer">
       <a href="../services/">Services</a>
       <a href="../service-areas/">Service Areas</a>
@@ -108,8 +109,15 @@
     </nav>
     <div class="footer-contact"><a href="tel:+16124407950">(612) 440-7950</a><br /><a href="mailto:hello@example.com">hello@example.com</a></div>
   </div>
-  <p class="copy">© <span id="year"></span> Bold North Electric. All rights reserved.</p>
+  <p class="copy">ï¿½ <span id="year"></span> Bold North Electric. All rights reserved.</p>
 </footer>
 <script src="../assets/app.js" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
 </body>
 </html>

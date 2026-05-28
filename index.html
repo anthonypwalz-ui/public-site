@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="Cache-Control" content="public, max-age=3600" />
 <title>Bold North Electric & Facility Services</title>
 <meta name="description" content="Licensed electrical and facility services for Minneapolis, St. Paul, and the surrounding Twin Cities metro. Fast response, fair pricing, professional crews." />
 <link rel="stylesheet" href="assets/styles.css" />
@@ -135,5 +136,12 @@
   <p class="copy">� <span id="year"></span> Bold North Electric. All rights reserved.</p>
 </footer>
 <script src="assets/app.js" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
 </body>
 </html>
