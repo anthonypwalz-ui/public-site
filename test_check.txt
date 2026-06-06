@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta http-equiv="Cache-Control" content="public, max-age=3600" />
-<title>Services � Bold North Electric</title>
+<title>Services ï¿½ Bold North Electric</title>
 <meta name="description" content="Electrical services in the Twin Cities: lighting, panel updates, outlet &amp; switch replacement, solar, backup generators, battery systems, rewiring, remodel electrical, smart systems, and much more." />
 <link rel="stylesheet" href="../assets/styles.min.css" />
 <link rel="icon" href="../assets/icon.png" type="image/png" />
@@ -13,7 +13,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="construction-banner" role="status" aria-live="polite">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-  This site is currently under construction — some content may be incomplete.
+  This site is currently under construction â€” some content may be incomplete.
 </div>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -40,77 +40,7 @@
 
   <section class="services-full">
     <div class="wrap">
-      <div class="svc-list">
-        <article class="svc-detail">
-          <header>
-            <h2>Lighting</h2>
-          </header>
-          <p>Interior and exterior lighting installations, LED retrofits, recessed lighting, and fixture replacements for residential and commercial spaces.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Panel Updates</h2>
-          </header>
-          <p>Service upgrades from 100A to 200A+, new sub-panels, breaker replacements, and dedicated circuits for EV chargers, HVAC, and commercial equipment.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Basic Outlet or Switch Replacement</h2>
-          </header>
-          <p>Install or replace standard outlets, GFCI, AFCI, USB outlets, and switches. Includes materials, cover plates, and code-compliant testing.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Solar</h2>
-          </header>
-          <p>Electrical work for solar panel systems including wiring, inverter connections, disconnect installation, and grid interconnection.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Backup Generator</h2>
-          </header>
-          <p>Standby and portable generator hookups, transfer switch installation, and load calculations to keep your home or business powered during outages.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Battery Systems</h2>
-          </header>
-          <p>Home battery storage installation and integration with solar or grid power for backup energy and peak-demand management.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Rewire</h2>
-          </header>
-          <p>Full or partial rewiring of older homes and commercial buildings to bring wiring up to current safety codes and eliminate fire hazards.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Remodel Electrical</h2>
-          </header>
-          <p>Complete electrical support for kitchen, bathroom, basement, and whole-home remodels &mdash; rough-in, trim-out, and final inspection-ready work.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>Smart Systems</h2>
-          </header>
-          <p>Installation of smart switches, dimmers, thermostats, EV chargers, and home automation wiring for a connected, efficient home.</p>
-        </article>
-
-        <article class="svc-detail">
-          <header>
-            <h2>And Much More</h2>
-          </header>
-          <p>Don&rsquo;t see what you need? We&rsquo;re here to solve your technical issues. If it involves electricity, give us a call &mdash; we&rsquo;ll find a solution.</p>
-        </article>
-      </div>
+      <div class="svc-list">PLACEHOLDER</div>
     </div>
   </section>
 
@@ -146,7 +76,7 @@
 
         <article class="plan plan-elite">
           <h3>Bold North TOTAL Protection Plan</h3>
-          <p class="plan-tagline">Our highest level of home electrical protection — priority service, lifetime workmanship coverage, and ongoing safety evaluations.</p>
+          <p class="plan-tagline">Our highest level of home electrical protection â€” priority service, lifetime workmanship coverage, and ongoing safety evaluations.</p>
           <ul class="check-list plan-list plan-list-elite">
             <li>Loyalty Program package</li>
             <li>Proactive upgrades to always meet current code &amp; safety standards</li>
@@ -163,7 +93,7 @@
     <div class="wrap cta-inner">
       <div>
         <h2>Don't see your project?</h2>
-        <p>If it plugs in, powers on, or lights up � we probably handle it. Ask us.</p>
+        <p>If it plugs in, powers on, or lights up ï¿½ we probably handle it. Ask us.</p>
       </div>
       <a class="btn btn-primary" href="../contact/">Ask a question</a>
     </div>
@@ -172,7 +102,7 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <div><strong>Bold North Electric</strong><p>Licensed, Insured and Bonded â MN License #EA-000000</p></div>
+    <div><strong>Bold North Electric</strong><p>Licensed, Insured and Bonded Ã¢Â€Â” MN License #EA-000000</p></div>
     <nav aria-label="Footer">
       <a href="../services/">Services</a>
       <a href="../service-areas/">Service Areas</a>
@@ -182,7 +112,7 @@
     </nav>
     <div class="footer-contact"><a href="tel:+16125400594">(612) 540-0594</a><br /><a href="mailto:hello@example.com">hello@example.com</a></div>
   </div>
-  <p class="copy">� <span id="year"></span> Bold North Electric. All rights reserved.</p>
+  <p class="copy">ï¿½ <span id="year"></span> Bold North Electric. All rights reserved.</p>
 </footer>
 <script src="../assets/app.min.js" defer></script>
 <script>
@@ -194,3 +124,4 @@ if ('serviceWorker' in navigator) {
 </script>
 </body>
 </html>
+
