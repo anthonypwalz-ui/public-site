@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Request</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 40px 36px;
+      width: 100%;
+      max-width: 560px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 28px;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin: 22px 0 10px;
+    }
+
+    .row {
+      display: grid;
+      gap: 12px;
+    }
+    .row-2 { grid-template-columns: 1fr 1fr; }
+    .row-3 { grid-template-columns: 2fr 2fr 1fr; }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1.5px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #111827;
+      background: #fff;
+      transition: border-color 0.15s;
+      outline: none;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
+    }
+    input::placeholder, textarea::placeholder { color: #9ca3af; }
+    textarea { resize: vertical; min-height: 110px; }
+
+    .emergency-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff7ed;
+      border: 1.5px solid #fed7aa;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      cursor: pointer;
+    }
+    .emergency-box input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: #ef4444;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+    .emergency-box .em-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #9a3412;
+    }
+    .emergency-box .em-sub {
+      font-size: 0.8rem;
+      color: #c2410c;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 28px;
+      padding: 13px;
+      background: #6366f1;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s, opacity 0.15s;
+    }
+    .submit-btn:hover:not(:disabled) { background: #4f46e5; }
+    .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    /* Success / Error states */
+    #success-view { display: none; text-align: center; padding: 20px 0; }
+    #success-view .check { font-size: 3rem; margin-bottom: 12px; }
+    #success-view h2 { font-size: 1.3rem; font-weight: 700; color: #111827; margin-bottom: 8px; }
+    #success-view p  { color: #6b7280; font-size: 0.9rem; }
+
+    .error-msg {
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      color: #b91c1c;
+      font-size: 0.85rem;
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 28px 20px; }
+      .row-2, .row-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+
+  <!-- Form view -->
+  <div id="form-view">
+    <h1>Request Service</h1>
+    <p class="subtitle">Fill out the form below and we'll be in touch shortly.</p>
+
+    <form id="intake-form" novalidate>
+
+      <div class="section-label">Contact Info</div>
+      <div class="row">
+        <label>
+          Full Name <span style="color:#ef4444">*</span>
+          <input type="text" name="name" placeholder="Jane Smith" required />
+        </label>
+      </div>
+      <div class="row row-2" style="margin-top:12px">
+        <label>
+          Email
+          <input type="email" name="email" placeholder="jane@example.com" />
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="(555) 000-0000" />
+        </label>
+      </div>
+
+      <div class="section-label">Service Address</div>
+      <div class="row">
+        <label>
+          Street Address
+          <input type="text" name="street" placeholder="123 Main St" />
+        </label>
+      </div>
+      <div class="row row-3" style="margin-top:12px">
+        <label>
+          City
+          <input type="text" name="city" placeholder="Springfield" />
+        </label>
+        <label>
+          State
+          <input type="text" name="state" placeholder="IL" maxlength="2" />
+        </label>
+        <label>
+          ZIP
+          <input type="text" name="postalCode" placeholder="62701" maxlength="10" />
+        </label>
+      </div>
+
+      <div class="section-label">About Your Issue</div>
+
+      <label class="emergency-box" for="is-emergency">
+        <input type="checkbox" id="is-emergency" name="isEmergency" />
+        <div>
+          <div class="em-label">🚨 This is an emergency</div>
+          <div class="em-sub">Check if you need urgent, same-day service</div>
+        </div>
+      </label>
+
+      <div class="row" style="margin-top:14px">
+        <label>
+          Describe the issue
+          <textarea name="details" placeholder="Please describe what's happening in as much detail as possible…"></textarea>
+        </label>
+      </div>
+
+      <div class="error-msg" id="error-msg"></div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">Submit Request</button>
+    </form>
+  </div>
+
+  <!-- Success view -->
+  <div id="success-view">
+    <div class="check">✅</div>
+    <h2>Request Received!</h2>
+    <p>Thank you — we've got your info and will be in touch soon.<br>
+       If this is an emergency, please also call us directly.</p>
+  </div>
+
+</div>
+
+<script>
+  // ─── Configuration ────────────────────────────────────────────────────────
+  // Replace these two values before publishing the page.
+  const INTAKE_ENDPOINT = 'https://vzwecznvjwlzcaidzgmz.functions.supabase.co/customer-intake';
+  const COMPANY_ID      = '11111111-1111-1111-1111-111111111111';
+  // ─────────────────────────────────────────────────────────────────────────
+
+  const form      = document.getElementById('intake-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const errorMsg  = document.getElementById('error-msg');
+  const formView  = document.getElementById('form-view');
+  const successView = document.getElementById('success-view');
+
+  function showError(msg) {
+    errorMsg.textContent = msg;
+    errorMsg.style.display = 'block';
+  }
+  function hideError() {
+    errorMsg.style.display = 'none';
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    hideError();
+
+    const data = new FormData(form);
+    const name = (data.get('name') || '').trim();
+    if (!name) {
+      showError('Please enter your full name.');
+      return;
+    }
+
+    const payload = {
+      companyId:   COMPANY_ID,
+      name,
+      email:       (data.get('email')      || '').trim() || undefined,
+      phone:       (data.get('phone')      || '').trim() || undefined,
+      street:      (data.get('street')     || '').trim() || undefined,
+      city:        (data.get('city')       || '').trim() || undefined,
+      state:       (data.get('state')      || '').trim() || undefined,
+      postalCode:  (data.get('postalCode') || '').trim() || undefined,
+      isEmergency: data.get('isEmergency') === 'on',
+      details:     (data.get('details')    || '').trim() || undefined,
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting…';
+
+    try {
+      const res = await fetch(INTAKE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      const json = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        throw new Error(json.error || `Server error (${res.status})`);
+      }
+
+      formView.style.display    = 'none';
+      successView.style.display = 'block';
+    } catch (err) {
+      showError(err.message || 'Something went wrong. Please try again.');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit Request';
+    }
+  });
+</script>
+</body>
+</html>

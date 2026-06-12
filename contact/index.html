@@ -44,26 +44,32 @@
 
       </aside>
 
-      <form id="quote-form" class="quote-form" onsubmit="return handleQuoteSubmit(event)">
-        <h2>Request a quote</h2>
-        <label>Name <input type="text" name="name" required autocomplete="name" /></label>
-        <label>Email <input type="email" name="email" required autocomplete="email" /></label>
-        <label>Phone <input type="tel" name="phone" autocomplete="tel" /></label>
-        <label>Street Address <input type="text" name="address" required autocomplete="street-address" placeholder="123 Main St" /></label>
-        <div class="form-row">
-          <label>City <input type="text" name="city" required autocomplete="address-level2" placeholder="Minneapolis" /></label>
-          <label class="form-field-sm">State <span class="tooltip-wrap"><input type="text" name="state" value="MN" readonly autocomplete="address-level1" /><span class="tooltip-icon" aria-label="We are currently only licensed for MN" tabindex="0">?<span class="tooltip-text">We are currently only licensed for MN</span></span></span></label>
-          <label class="form-field-sm">ZIP <input type="text" name="zip" required autocomplete="postal-code" placeholder="55418" inputmode="numeric" maxlength="5" /></label>
-        </div>
-        <label class="checkbox-label">
-          <input type="checkbox" name="emergency" value="yes" />
-          <span>This is an emergency <span class="checkbox-hint">(e.g. power loss, popping or buzzing sounds from electrical, the smell of smoke, or getting shocked by things that shouldn&rsquo;t shock you like water pipes)</span></span>
-        </label>
-        <label>Details <textarea name="details" rows="5" placeholder="Briefly describe the project or problem&hellip;"></textarea></label>
-        <button class="btn btn-primary" type="submit">Send request</button>
-        <p class="form-note">By submitting, you agree we may contact you about your request. See our <a href="../privacy/">privacy policy</a>.</p>
-        <p id="quote-success" class="form-success" hidden>Thanks � your request is queued. We'll be in touch shortly.</p>
-      </form>
+      <div id="form-view">
+        <form id="quote-form" class="quote-form">
+          <h2>Request a quote</h2>
+          <label>Name <input type="text" name="name" required autocomplete="name" /></label>
+          <label>Email <input type="email" name="email" required autocomplete="email" /></label>
+          <label>Phone <input type="tel" name="phone" autocomplete="tel" /></label>
+          <label>Street Address <input type="text" name="address" required autocomplete="street-address" placeholder="123 Main St" /></label>
+          <div class="form-row">
+            <label>City <input type="text" name="city" required autocomplete="address-level2" placeholder="Minneapolis" /></label>
+            <label class="form-field-sm">State <span class="tooltip-wrap"><input type="text" name="state" value="MN" readonly autocomplete="address-level1" /><span class="tooltip-icon" aria-label="We are currently only licensed for MN" tabindex="0">?<span class="tooltip-text">We are currently only licensed for MN</span></span></span></label>
+            <label class="form-field-sm">ZIP <input type="text" name="zip" required autocomplete="postal-code" placeholder="55418" inputmode="numeric" maxlength="5" /></label>
+          </div>
+          <label class="checkbox-label">
+            <input type="checkbox" name="emergency" value="yes" />
+            <span>This is an emergency <span class="checkbox-hint">(e.g. power loss, popping or buzzing sounds from electrical, the smell of smoke, or getting shocked by things that shouldn&rsquo;t shock you like water pipes)</span></span>
+          </label>
+          <label>Details <textarea name="details" rows="5" placeholder="Briefly describe the project or problem&hellip;"></textarea></label>
+          <p id="error-msg" style="display:none;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:10px 14px;color:#b91c1c;font-size:0.85rem;margin-bottom:8px"></p>
+          <button class="btn btn-primary" type="submit" id="submit-btn">Send request</button>
+          <p class="form-note">By submitting, you agree we may contact you about your request. See our <a href="../privacy/">privacy policy</a>.</p>
+        </form>
+      </div>
+      <div id="success-view" style="display:none;text-align:center;padding:20px 0">
+        <p class="form-success">Thank you &mdash; we will be reaching out soon.</p>
+      </div>
+
     </div>
   </section>
 </main>
