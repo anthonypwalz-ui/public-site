@@ -4,17 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta http-equiv="Cache-Control" content="public, max-age=3600" />
-<title>Contact � Bold North Electric</title>
+<title>Contact Bold North Electric</title>
 <meta name="description" content="Request a free estimate or schedule service in the Twin Cities. Call, email, or use the quote form. 24/7 emergency dispatch available." />
 <link rel="stylesheet" href="../assets/styles.min.css" />
 <link rel="icon" href="../assets/icon.png" type="image/png" />
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="construction-banner" role="status" aria-live="polite">
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-  This site is currently under construction — some content may be incomplete.
-</div>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="../"><img src="../assets/logo.png" alt="Bold North Electric" class="brand-logo" /></a>
@@ -44,7 +40,7 @@
         <h2>Reach us directly</h2>
         <p><strong>Phone</strong><br /><a href="tel:+16125400594">(612) 540-0594</a></p>
         <p><strong>Email</strong><br /><a href="mailto:office@BoldNorthElectric.com">office@BoldNorthElectric.com</a></p>
-        <p><strong>Hours</strong><br />Mon–Fri 8am–5pm<br />24/7 emergency dispatch<br />Same-day service available if schedule allows</p>
+        <p><strong>Hours</strong><br />Mon–Fri 8am–5pm<br />24/7 emergency dispatch<br />Same-day service available if schedule permits</p>
 
       </aside>
 
@@ -53,17 +49,17 @@
         <label>Name <input type="text" name="name" required autocomplete="name" /></label>
         <label>Email <input type="email" name="email" required autocomplete="email" /></label>
         <label>Phone <input type="tel" name="phone" autocomplete="tel" /></label>
-        <label>City / zip <input type="text" name="location" placeholder="e.g. Minneapolis 55418" required /></label>
-        <label>What do you need? <select name="service">
-          <option>Standard service call</option>
-          <option>Emergency service call</option>
-          <option>LED retrofit / lighting</option>
-          <option>Outlet / circuit install</option>
-          <option>Panel upgrade</option>
-          <option>Preventive maintenance</option>
-          <option>Something else</option>
-        </select></label>
-        <label>Details <textarea name="details" rows="5" placeholder="Briefly describe the project or problem�"></textarea></label>
+        <label>Street Address <input type="text" name="address" required autocomplete="street-address" placeholder="123 Main St" /></label>
+        <div class="form-row">
+          <label>City <input type="text" name="city" required autocomplete="address-level2" placeholder="Minneapolis" /></label>
+          <label class="form-field-sm">State <span class="tooltip-wrap"><input type="text" name="state" value="MN" readonly autocomplete="address-level1" /><span class="tooltip-icon" aria-label="We are currently only licensed for MN" tabindex="0">?<span class="tooltip-text">We are currently only licensed for MN</span></span></span></label>
+          <label class="form-field-sm">ZIP <input type="text" name="zip" required autocomplete="postal-code" placeholder="55418" inputmode="numeric" maxlength="5" /></label>
+        </div>
+        <label class="checkbox-label">
+          <input type="checkbox" name="emergency" value="yes" />
+          <span>This is an emergency <span class="checkbox-hint">(e.g. power loss, popping or buzzing sounds from electrical, the smell of smoke, or getting shocked by things that shouldn&rsquo;t shock you like water pipes)</span></span>
+        </label>
+        <label>Details <textarea name="details" rows="5" placeholder="Briefly describe the project or problem&hellip;"></textarea></label>
         <button class="btn btn-primary" type="submit">Send request</button>
         <p class="form-note">By submitting, you agree we may contact you about your request. See our <a href="../privacy/">privacy policy</a>.</p>
         <p id="quote-success" class="form-success" hidden>Thanks � your request is queued. We'll be in touch shortly.</p>
@@ -81,6 +77,7 @@
       <a href="../about/">About</a>
       <a href="../contact/">Contact</a>
       <a href="../privacy/">Privacy</a>
+      <a href="../terms/">Terms &amp; Conditions</a>
     </nav>
     <div class="footer-contact"><a href="tel:+16125400594">(612) 540-0594</a><br /><a href="mailto:office@BoldNorthElectric.com">office@BoldNorthElectric.com</a></div>
   </div>

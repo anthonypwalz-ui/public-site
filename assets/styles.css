@@ -144,6 +144,7 @@ h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.05; letter-spacing: -0.02
 .stats-grid {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center;
 }
+.stats-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 480px; margin: 0 auto; }
 .stats-grid strong { display: block; font-size: 26px; color: var(--ink); }
 .stats-grid span { color: var(--sub); font-size: 13px; }
 @media (max-width: 700px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -236,15 +237,34 @@ h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.05; letter-spacing: -0.02
   padding: 24px; display: grid; gap: 12px; box-shadow: var(--shadow);
 }
 .quote-form h2 { margin: 0 0 4px; font-size: 22px; }
-.quote-form label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink); }
+.quote-form label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink); min-width: 0; }
+.quote-form label { min-width: 0; }
 .quote-form input, .quote-form select, .quote-form textarea {
   font: inherit; padding: 10px 12px; border-radius: 10px;
   border: 1px solid var(--line); background: #ffffff; color: var(--ink);
+  width: 100%; min-width: 0;
 }
 .quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus {
   outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(0, 91, 187, 0.12);
 }
 .quote-form textarea { resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; }
+.form-field-sm input { width: 80px; }
+@media (max-width: 480px) {
+  .quote-form { padding: 16px; }
+  .form-row { grid-template-columns: 1fr 1fr; }
+  .form-row > label:first-child { grid-column: 1 / -1; }
+  .form-field-sm input { width: 100%; }
+}
+input[name="state"] { background: var(--soft); color: var(--sub); border-color: transparent; cursor: default; pointer-events: none; font-weight: 600; }
+.checkbox-label { display: flex !important; flex-direction: row !important; align-items: center; gap: 10px; cursor: pointer; padding: 10px 0; }
+.checkbox-label input[type="checkbox"] { width: 18px; height: 18px; flex-shrink: 0; accent-color: var(--brand); cursor: pointer; margin: 0; }
+.checkbox-label span { font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1; }
+.checkbox-hint { font-size: 12px; font-weight: 400; color: var(--sub); }
+.tooltip-wrap { position: relative; display: inline-flex; align-items: center; gap: 4px; }
+.tooltip-icon { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: var(--muted); color: #fff; font-size: 11px; font-weight: 700; cursor: default; line-height: 1; flex-shrink: 0; }
+.tooltip-icon .tooltip-text { display: none; position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: 12px; font-weight: 400; white-space: nowrap; padding: 5px 9px; border-radius: 6px; pointer-events: none; z-index: 10; }
+.tooltip-icon:hover .tooltip-text, .tooltip-icon:focus .tooltip-text { display: block; }
 .form-note { font-size: 12px; color: var(--muted); margin: 0; }
 .form-success {
   background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0;
