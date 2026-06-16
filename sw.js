@@ -10,7 +10,7 @@
 
 'use strict';
 
-var CACHE_VERSION = 'v4';
+var CACHE_VERSION = 'v5';
 var STATIC_CACHE  = 'static-'  + CACHE_VERSION;
 var PAGE_CACHE    = 'pages-'   + CACHE_VERSION;
 
@@ -25,6 +25,7 @@ var PRECACHE_ASSETS = [
 var PRECACHE_PAGES = [
   '/',
   '/about/',
+  '/blog/',
   '/contact/',
   '/services/',
   '/service-areas/',

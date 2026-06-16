@@ -1,0 +1,139 @@
+1. Outlet Keeps Popping or Tripping
+
+This page explains repeated outlet or GFCI tripping caused by overloads, moisture, or wiring faults. It teaches homeowners when resetting is safe and when it indicates a deeper electrical issue. In Minnesota homes, basements and garages are especially common trouble spots due to humidity and aging wiring systems that struggle with modern electrical demand.
+
+Image prompt:
+“Modern GFCI outlet in residential wall with reset button partially tripped, subtle warning glow, clean Minnesota home interior, realistic photography style”
+
+2. Why Your Outlet Sparks When Plugging Something In
+
+This page explains why outlets sometimes spark when plugging in devices. It covers normal micro-arcing versus dangerous visible sparking caused by worn contacts or loose wiring. Frequent sparking indicates heat buildup and electrical degradation that increases fire risk if not addressed quickly.
+
+Image prompt:
+“Close-up of hand plugging cord into worn electrical outlet with small visible spark, realistic home interior, safety focused lighting”
+
+3. Burning Smell from Outlet or Switch
+
+This page covers one of the most dangerous electrical warning signs. A burning smell usually indicates overheating insulation, melting plastic, or arcing inside the wall. It emphasizes immediate shutdown and professional inspection, as hidden damage can lead to electrical fires even if the smell disappears.
+
+Image prompt:
+“Wall outlet with faint scorch marks and light smoke rising in dim residential room, realistic emergency hazard scene”
+
+4. Breaker Keeps Tripping
+
+This page explains repeated breaker trips caused by overloads, short circuits, or ground faults. It helps homeowners understand load limits and why resetting without fixing the cause is unsafe. It also highlights how modern appliances can overwhelm older Minnesota electrical systems.
+
+Image prompt:
+“Electrical breaker panel with one breaker switched off, electrician pointing at breaker, clean utility room, realistic lighting”
+
+5. Flickering or Dimming Lights
+
+This page explains flickering lights caused by voltage drops, loose neutral connections, or overloaded circuits. It distinguishes between minor appliance-related flicker and serious wiring issues that can affect the entire home’s electrical stability.
+
+Image prompt:
+“Living room ceiling lights flickering slightly, subtle motion blur effect, cozy home interior, realistic style”
+
+6. Half of My House Lost Power
+
+This page explains why only part of a home may lose power due to split-phase service issues, breaker failure, or loose neutral connections. It highlights urgent conditions where electrical imbalance can cause damage to appliances and wiring.
+
+Image prompt:
+“Suburban home interior split lighting, half house dark and half illuminated, dramatic contrast, realistic evening scene”
+
+7. Warm or Hot Outlet / Switch
+
+This page focuses on the serious danger of heat in outlets or switches. Heat is caused by resistance from loose wiring or overloaded circuits. It explains that warm outlets are never normal and are often a precursor to electrical fires if not addressed immediately.
+
+Image prompt:
+“Hand near slightly discolored warm electrical outlet plate with subtle heat glow effect, realistic home interior warning scene”
+
+8. When to Replace Electrical Outlets
+
+This page explains outlet wear, including loose plugs, discoloration, and internal degradation. It helps homeowners understand when outlets should be replaced for safety and code compliance, including modern tamper-resistant and GFCI upgrades.
+
+Image prompt:
+“Side-by-side comparison of old worn outlet and new modern white outlet installed in wall, clean lighting”
+
+9. How to Know If Home Wiring Is Outdated
+
+This page covers outdated wiring types like aluminum and cloth insulation, common in older homes. It explains grounding issues and circuit limitations that struggle with modern electrical loads like EV chargers, appliances, and HVAC systems.
+
+Image prompt:
+“Old cloth-insulated wiring next to modern copper wiring inside wall cavity, construction style lighting”
+
+10. How Often Electrical Panels Should Be Inspected
+
+This page explains inspection frequency and warning signs of panel deterioration such as rust, corrosion, overheating, and breaker fatigue. It emphasizes preventative maintenance to avoid sudden failures and electrical hazards.
+
+Image prompt:
+“Electrician inspecting residential breaker panel with flashlight, clean organized wiring, modern utility room”
+
+11. What GFCI Outlets Do and Why They Trip
+
+This page explains GFCI safety function and why outlets trip due to moisture, faulty appliances, or wiring issues. It helps homeowners distinguish between normal protection behavior and signs of electrical faults.
+
+Image prompt:
+“Bathroom GFCI outlet with test and reset buttons visible, clean tiled wall, sink in background”
+
+12. What Is an Arc Fault and Why It Matters
+
+This page explains arc faults and AFCI protection, focusing on how dangerous electrical arcs inside walls can cause fires. It helps homeowners understand modern code requirements and safety improvements.
+
+Image prompt:
+“Electrical arc flash inside wire insulation glowing inside wall cavity, educational diagram style”
+
+13. How to Safely Reset a Breaker
+
+This page provides safe step-by-step guidance for resetting breakers. It emphasizes identifying the cause before resetting and avoiding repeated trips, which can indicate deeper electrical issues.
+
+Image prompt:
+“Hand flipping breaker in modern electrical panel, clear labels, bright safe instructional lighting”
+
+14. Signs You Need an Electrician Immediately
+
+This page highlights emergency warning signs such as burning smells, sparks, buzzing panels, and repeated outages. It helps homeowners recognize when to stop using electrical systems immediately.
+
+Image prompt:
+“Smoky electrical outlet with sparks and warning glow effect in dim room, emergency hazard scene”
+
+15. Why Outlets Stop Holding Plugs Tight
+
+This page explains worn outlet contacts that cause loose plugs. It covers heat buildup, arcing risk, and aging receptacles that should be replaced for safety.
+
+Image prompt:
+“Loose electrical plug falling slightly out of wall outlet, showing worn socket contacts”
+
+16. Why Lights Flicker When Appliances Turn On
+
+This page explains temporary voltage drops from high-load appliances like refrigerators or microwaves. It also covers deeper wiring issues if flickering becomes frequent or widespread.
+
+Image prompt:
+“Kitchen lights dimming slightly as refrigerator turns on, realistic home scene”
+
+17. Electrical Safety Checklist for Homeowners
+
+This page provides a practical safety checklist covering outlets, panels, cords, smoke detectors, and exterior wiring. It helps homeowners identify early warning signs and prevent electrical hazards.
+
+Image prompt:
+“Clipboard safety checklist next to electrical panel, gloves and tools nearby, clean organized workspace”
+
+18. When to Upgrade Electrical Panel
+
+This page explains when electrical panels become outdated or undersized. It covers 100A vs 200A upgrades, EV chargers, remodels, and modern appliance load demands.
+
+Image prompt:
+“Modern upgraded electrical panel with clean labeled breakers, bright utility room”
+
+19. Why You Shouldn’t Ignore Small Electrical Issues
+
+This page explains how minor electrical symptoms often signal larger hidden problems. It connects small issues like flickering lights or warm outlets to potential fire risks if ignored.
+
+Image prompt:
+“Small electrical spark growing into larger hazard visual metaphor inside outlet, educational concept image”
+
+20. Common Electrical Problems in Minnesota Homes (Including Space Heaters & Window AC Overload)
+
+This page combines regional electrical issues with seasonal hazards. It covers outdated wiring, basement circuits, and overloaded systems caused by space heaters in winter and window AC units in summer. It explains how these appliances can overheat wiring even without tripping breakers, creating hidden fire risks.
+
+Image prompt:
+“Split seasonal Minnesota home scene: space heater plugged into overloaded outlet on left, window AC unit plugged into extension cord on right, subtle heat glow warning effect, realistic interior”
