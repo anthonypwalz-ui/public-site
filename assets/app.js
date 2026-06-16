@@ -16,6 +16,17 @@
   } catch (e) { /* noop */ }
 })();
 
+// Correct hash-anchor scroll after full page load.
+// The sticky header logo (128px) loads async; if it shifts the layout after
+// the browser's initial hash scroll the target ends up out of view.
+// Firing scrollIntoView on 'load' guarantees a stable layout.
+window.addEventListener('load', function () {
+  if (!location.hash) return;
+  var el;
+  try { el = document.querySelector(location.hash); } catch (e) { return; }
+  if (el) el.scrollIntoView();
+});
+
 // Quote form submission
 var INTAKE_ENDPOINT = 'https://vzwecznvjwlzcaidzgmz.functions.supabase.co/customer-intake';
 var COMPANY_ID = '11111111-1111-1111-1111-111111111111';
