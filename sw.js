@@ -10,7 +10,7 @@
 
 'use strict';
 
-var CACHE_VERSION = 'v5';
+var CACHE_VERSION = 'v6';
 var STATIC_CACHE  = 'static-'  + CACHE_VERSION;
 var PAGE_CACHE    = 'pages-'   + CACHE_VERSION;
 
