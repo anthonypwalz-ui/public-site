@@ -145,6 +145,7 @@ h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.05; letter-spacing: -0.02
 .stats-grid {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center;
 }
+.stats-grid-1 { grid-template-columns: 1fr; max-width: 240px; margin: 0 auto; }
 .stats-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 480px; margin: 0 auto; }
 .stats-grid strong { display: block; font-size: 26px; color: var(--ink); }
 .stats-grid span { color: var(--sub); font-size: 13px; }
@@ -185,6 +186,14 @@ h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.05; letter-spacing: -0.02
 
 .county { margin-bottom: 36px; }
 .county h2 { font-size: 20px; margin: 0 0 8px; }
+
+/* Trust */
+.trust { padding: 64px 0; background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.trust-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 28px; max-width: 680px; margin: 0 auto; }
+.trust-list li { display: flex; gap: 16px; align-items: flex-start; }
+.trust-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.trust-list strong { display: block; font-size: 17px; color: var(--ink); margin: 0 0 4px; }
+.trust-list p { margin: 0; color: var(--sub); font-size: 15px; }
 
 /* CTA band */
 .cta-band {
