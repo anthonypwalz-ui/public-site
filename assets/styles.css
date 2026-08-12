@@ -78,7 +78,7 @@ img { max-width: 100%; display: block; }
 }
 .brand { display: inline-flex; align-items: center; text-decoration: none; }
 .brand:hover { text-decoration: none; opacity: 0.88; }
-.brand-logo { height: 128px; width: auto; display: block; }
+.brand-logo { width: 200px; height: auto; display: block; }
 .site-nav { display: flex; gap: 22px; margin-left: auto; }
 .site-nav a {
   color: var(--sub); font-weight: 600; font-size: 15px;
